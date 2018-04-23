@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.nav-link {
+    color: #fff !important;
+}
+
+.login {
+    display: inline-block;
+}
+
+.material-icons {
+    vertical-align: bottom;
+}
+
+.cart {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 4px;
+}
