@@ -160,3 +160,21 @@ h1, h2, h3, h4, h5, h6 {
 .card {
     border: none;
 }
+
+.checked {
+    color: orange !important;
+}
+
+.fa-star {
+	color: #b8b8b8;
+}
+
+.rating {
+    padding: 0 !important;
+    font-size: 1.25rem;
+    width: auto;
+    text-align: left;
+    text-decoration: none;
+    margin: 0 !important;
+    border-radius: 0;
+}
