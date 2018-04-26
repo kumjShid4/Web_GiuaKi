@@ -28,3 +28,25 @@
 .borderless td {
     border: none;
 }
+
+.slide0 {
+    margin-top: 0 !important;
+    height: auto;
+}
+
+.slide0 > ul {
+    position: static;
+}
+
+.slide0 ul li {
+    max-width: 200px;
+}
+
+.slide0 nav {
+	position: relative;
+	top: 0px;
+	text-align: center;
+	max-width: 800px;
+	margin: 0 auto;
+	border-top: 5px solid #333;
+}
