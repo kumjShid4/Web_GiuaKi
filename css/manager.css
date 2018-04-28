@@ -36,3 +36,11 @@
     background-color: rgb(241, 241, 241);
     font-family: Roboto,sans-serif,arial;
 }
+
+.container > .row > .col-md-10 {
+    font-family: Roboto,sans-serif,arial;
+}
+
+body {
+    background-color: rgb(241, 241, 241);
+}
