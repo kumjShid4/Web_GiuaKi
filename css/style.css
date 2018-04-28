@@ -238,23 +238,28 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #fff;
 }
 
-.tablet, .laptop {
+.custom-size {
     width: 160%;
-    height: 100%;
+    height: 200%;
 }
 
-.samsung {
+.simplecarry {
     width: 220%;
     height: 100%;
 }
 
-.xiaomi {
-    width: 100%;
+.seliux {
+    width: 250%;
     height: 100%;
 }
 
-.apple {
-    width: 200%;
+.mikkor {
+    width: 240%;
+    height: 100%;
+}
+
+.targus {
+    width: 270%;
     height: 100%;
 }
 
