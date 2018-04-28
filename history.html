@@ -42,13 +42,21 @@
                         <a class="nav-link" href="#">
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Track Order</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./login.html">
-                            <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Login</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link" href="./signup.html">
-                            <i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Signup</a>
+                        <a class="nav-link">
+                            Ân Lê
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarSupport">
+                            <a class="dropdown-item" href="./info.html">
+                                Thông tin cá nhân
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                Quản lý giỏ hàng
+                            </a>
+                            <a class="dropdown-item" href="./history.html">
+                                Lịch sử mua hàng
+                            </a>
+                        </div>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarSupport" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -360,16 +368,16 @@
         </nav>
     </div>
 
-    <div class="container mr-5 ml-5">
+    <div class="container-fluid m-0">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 pl-5">
                 <div>
                     Chào bạn
                     <span class="font-weight-bold">Duy Anh</span>
                 </div>
                 <ul class="dropdown-menu menu">
                     <li class="active">
-                        <a href="#">
+                        <a href="./info.html">
                             <i class="fa fa-user-circle fa-lg" aria-hidden="true"></i>
                             <span>Thông tin tài khoản</span>
                         </a>
@@ -393,7 +401,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="./history.html">
                             <i class="fa fa-history fa-lg" aria-hidden="true"></i>&nbsp;
                             <span>Lịch sử mua hàng</span>
                         </a>
@@ -417,16 +425,18 @@
                     <a class="breadcrumb-item" href="#">Đơn hàng của tôi</a>
                     <a class="breadcrumb-item active" aria-current="page">Chi tiết đơn hàng</a>
                 </nav>
-                <div class="border ">
-                    <div class="row">
-                            <div class="col-sm-6 ml-2"><strong>Đơn hàng #1322441</strong>
-                                <div class="font-weight-light">Đặt ngày 24/04/2018</div>
-                            </div>
-                            <div class="col-sm-5 font-weight-light text-right text-nowrap mt-3 ml-3">Tổng cộng:&nbsp11.114.000<strong>đ</strong></div>
-                            
+                <div class="border">
+                    <div class="row mx-0 mb-0 bg-white">
+                        <div class="col-sm-6 ml-2">
+                            <strong>Đơn hàng #1322441</strong>
+                            <div class="font-weight-light">Đặt ngày 24/04/2018</div>
+                        </div>
+                        <div class="col-sm-5 font-weight-light text-right text-nowrap mt-3 ml-3">Tổng cộng:&nbsp;11.114.000
+                            <strong>đ</strong>
+                        </div>
                     </div>
                 </div>
-                <div class="border mt-3  ">
+                <div class="border mt-3 mx-0 mb-0 bg-white">
                     <span class="mt-2 ml-2">Tình trạng đơn hàng: Đã được giao vào 25/04/2018</span>
                     <div class="progress mt-4 " style="margin-left: 200px;margin-right: 200px">
                         <div class="progress-bar bg-warning " role="progressbar" style="width: 33%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">Đang xử lý</div>
@@ -436,55 +446,68 @@
                     <div class="border p-3 mb-2 bg-light text-dark mt-4 ml-5 mr-5 ">
                         <div class="row">
                             <span class="col-sm-3">25/04/2018- 8h45</span>
-                            <span class="col-sm-9">Gói hàng của bạn đã được giao dịch thành công, 
-                                cảm ơn bạn đã sử dụng dịch vụ của Shop Pohs. Rất mong nhận được sự ủng hộ của bạn trong những lần sau</span>
+                            <span class="col-sm-9">Gói hàng của bạn đã được giao dịch thành công, cảm ơn bạn đã sử dụng dịch vụ của Shop Pohs. Rất
+                                mong nhận được sự ủng hộ của bạn trong những lần sau</span>
                         </div>
                     </div>
                     <div class="row">
-                        <img class="col-sm-3 ml-3" src="./img/new4.jpg"> 
+                        <img class="col-sm-3 ml-3" src="./img/new4.jpg">
                         <span class="col-sm-2 mt-5">Laptop Asus X411</span>
-                        <span class="col-sm-3 mt-5 text-right">11.114.000 <strong>đ</strong></span>
+                        <span class="col-sm-3 mt-5 text-right">11.114.000
+                            <strong>đ</strong>
+                        </span>
                         <span class="col-sm-3 mt-5 text-right">Số lượng: 1 </span>
                     </div>
-                </div>    
+                </div>
                 <div class="row">
                     <div class="mt-3 col-sm-6 ">
                         <div class="collumn">
-                                <div class="border mt-3 col-sm-12 ">
-                            <h5>Địa chỉ giao hàng</h5>
-                            <span>Nguyễn Võ Duy Anh</span>
-                            <br>
-                            <span>100 Nguyễn Ngọc Lộc, phường 14, quận 10, t.p Hồ Chí Minh</span><br>
-                            <span>SĐT: 0932068355</span>
+                            <div class="border mt-3 col bg-white">
+                                <h5>Địa chỉ giao hàng</h5>
+                                <span>Nguyễn Võ Duy Anh</span>
+                                <br>
+                                <span>100 Nguyễn Ngọc Lộc, phường 14, quận 10, t.p Hồ Chí Minh</span>
+                                <br>
+                                <span>SĐT: 0932068355</span>
                             </div>
-                            <div class="border mt-3 col-sm-12 ">
+                            <div class="border mt-3 col bg-white">
                                 <h5>Địa chỉ thanh toán</h5>
                                 <span>Nguyễn Võ Duy Anh</span>
                                 <br>
-                                <span>100 Nguyễn Ngọc Lộc, phường 14, quận 10, t.p Hồ Chí Minh</span><br>
+                                <span>100 Nguyễn Ngọc Lộc, phường 14, quận 10, t.p Hồ Chí Minh</span>
+                                <br>
                                 <span>SĐT: 0932068355</span>
                             </div>
                         </div>
-                    </div>     
+                    </div>
                     <div class="mt-3 col-sm-6 ">
-                        <div class="border mt-3 col-sm-12 ">
+                        <div class="border mt-3 col bg-white">
                             <h5>Tổng cộng: </h5>
                             <span>Tạm tính:</span>
-                            <span class="text-right">11.114.000đ</span><br>
+                            <span class="text-right">11.114.000đ</span>
+                            <br>
                             <span>Phí vận chuyển: </span>
-                            <span class="text-right">0đ</span><br><br>
-                            <span class="mt-2"><hr></span>
-                            <span>Tổng cộng (Đã bao gồm VAT) <h5>11.114.000đ</h5></span>
-                            <span>Thanh toán khi nhận hàng</span><br><br><br>
-                           
+                            <span class="text-right">0đ</span>
+                            <br>
+                            <br>
+                            <span>
+                                <hr>
+                            </span>
+                            <span>Tổng cộng (Đã bao gồm VAT)
+                                <h5>11.114.000đ</h5>
+                            </span>
+                            <span>Thanh toán khi nhận hàng</span>
+                            <br>
+                            <br>
+                            <br>
                         </div>
-                    </div>    
-                </div>    
-            </div>
-            </div>
-               
+                    </div>
+                </div>
             </div>
         </div>
+
+    </div>
+    </div>
     </div>
 
 
