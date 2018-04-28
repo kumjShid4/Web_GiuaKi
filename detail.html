@@ -12,69 +12,357 @@
         crossorigin="anonymous">
     <!-- Google Font -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- slider css -->
     <link rel="stylesheet" href="./itemSlider/css/main-style.css">
     <!-- custom css -->
     <link rel="stylesheet" href="./css/style.css">
-    <!-- detail css -->
     <link rel="stylesheet" href="./css/detail.css">
 </head>
 
 <body>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark justify-content-between mb-2 px-5" style="background-color: #02a8f3;">
-        <a class="navbar-brand" href="#">Best Shop Ever</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiveContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between" style="background-color: #02a8f3;">
+            <a class="navbar-brand" href="#">Shop Pohs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsiveContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsiveContent">
-            <form class="form-inline ml-auto">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Track Order</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Signup</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarSupport" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        24/7 Support
-                        <b class="caret"></b>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarSupport">
-                        <a class="dropdown-item" href="#">
-                            <strong>Call: </strong>0123 456 789</a>
+            <div class="collapse navbar-collapse" id="navbarResponsiveContent">
+                <form class="form-inline ml-auto">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp;Track Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./login.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Login</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="./signup.html"><i class="fa fa-user-o" aria-hidden="true"></i>&nbsp;Signup</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarSupport" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            24/7 Support
+                            <b class="caret"></b>
                         </a>
-                        <a class="dropdown-item" href="mailto:bestShopEver@bestshop.com">
-                            <strong>Mail: </strong>bestShopEver@bestshop.com</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="https://goo.gl/maps/qyHMFh1LzGo" target="_blank">
-                            <strong>Address: </strong>
-                            <div>
-                                Tân Bình, Hồ Chí Minh
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarSupport">
+                            <a class="dropdown-item" href="#">
+                                <strong>Call: </strong>0123 456 789</a>
+                            </a>
+                            <a class="dropdown-item" href="mailto:bestShopEver@bestshop.com">
+                                <strong>Mail: </strong>bestShopEver@bestshop.com</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="https://goo.gl/maps/qyHMFh1LzGo" target="_blank">
+                                <strong>Address: </strong>
+                                <div>
+                                    Tân Bình, Hồ Chí Minh
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg navbar-dark justify-content-between mb-2 pb-0" style="background-color: #02a8f3;">
+            <nav class="dropdown mr-custom">
+                <button class="btn btn-dropdown text-dropdown px-0" type="button" id="listItemDropdown" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+                    DANH MỤC SẢN PHẨM
+                </button>
+                <div class="dropdown-menu" aria-labelledby="listItemDropdown">
+                    <ul>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <i class="fa fa-mobile fa-lg icon-align" aria-hidden="true"></i>
+                                <span class="text-dropdown">Điện thoại</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPhone</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy S9</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy S9 Plus</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy Note 8</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Redmi Note 4</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Redmi Note 5</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Mi Mix 2S</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">OPPO F7</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Nokia 7 Plus</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Nokia 6 2018</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sony XA1 Plus</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Blackberry Passport</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy J7 Pro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy J2 Prime</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy J3 LTE</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy Note 9</a>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                        </a>
-                    </div>
-            </ul>
-        </div>
-    </nav>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <i class="fa fa-tablet fa-lg icon-align" aria-hidden="true"></i>
+                                <span class="text-dropdown">Máy tính bảng</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown tablet">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPad Pro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPad New</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPad Mini</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPad Air Retina</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Galaxy Tab</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Kindle 2018</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Huawei MediaPad</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Kindle Fire (7th)</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <i class="fa fa-laptop fa-lg icon-align" aria-hidden="true"></i>
+                                <span class="text-dropdown">Laptop</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown laptop">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Dell Alienware</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Dell Vostro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Asus Gaming</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Asus ROG</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Macbook Pro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Microsoft Surface</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Lenovo ThinkPad</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">HP Elitebook</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <i class="fa fa-headphones fa-lg icon-align" aria-hidden="true"></i>
+                                <span class="text-dropdown">Phụ kiện</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Tai nghe</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Loa máy tính</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Máy nghe nhạc</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Máy ghi âm</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Đồng hồ thông minh</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Kính thực tế ảo</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sạc dự phòng</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Bao da, ốp lưng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Chuột gaming</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Bàn phím gaming</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Lót chuột</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Màn hình gaming</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Đế sạc không dây</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Cáp sạc</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Thẻ nhớ</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sim 3G/4G</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <nav class="dropdown mr-custom">
+                <button class="btn btn-dropdown text-dropdown px-0" type="button" id="listItemDropdown" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <i class="fa fa-home fa-lg" aria-hidden="true"></i>
+                    NHÀ CUNG CẤP
+                </button>
+                <div class="dropdown-menu" aria-labelledby="listItemDropdown">
+                    <ul>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <span class="text-dropdown">Samsung</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown samsung">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy J7 Pro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy S9</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy S9 Plus</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Samsung Galaxy Note 8</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Galaxy Tab A8</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sạc dự phòng</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Đế sạc không dây</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Tai nghe bluetooth</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <span class="text-dropdown">Xiaomi</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown xiaomi">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Redmi Note 4</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Redmi Note 5</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi Mix 2S</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Xiaomi SmartWatch</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <span class="text-dropdown">Apple</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown apple">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPhone X</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPhone 6</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPhone 6S</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Apple Watch</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">iPad Pro</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Apple Magic Mouse</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Apple Lightning</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Adapter Apple</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a class="dropdown-item dropdown-list-item" href="#">
+                                <span class="text-dropdown">Anker</span>
+                            </a>
+                            <div class="dropdown-menu sub-dropdown">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Tai nghe</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Loa máy tính</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Máy nghe nhạc</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Máy ghi âm</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sạc tường</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sạc ô tô</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Sạc không dây</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Bao da, ốp lưng</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Cáp Lightning</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Cáp Micro USB</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Cap USB-C</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Cáp âm thanh</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Chuột máy tính</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Kính cường lực</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Camera hành trình</a>
+                                            <a href="#" class="dropdown-item text-dropdown pl-2 pr-0">Giá đỡ</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <button class="btn btn-dropdown text-dropdown px-0 mr-custom" type="button">
+                <i class="fa fa-check-square-o fa-lg" aria-hidden="true"></i>
+                100% Chính hãng
+            </button>
+            <button class="btn btn-dropdown text-dropdown px-0 mr-custom" type="button">
+                <i class="fa fa-hourglass-half fa-lg" aria-hidden="true"></i>
+                Giao hàng chớp nhoáng
+            </button>
+            <button class="btn btn-dropdown text-dropdown px-0 mr-custom" type="button">
+                <i class="fa fa-undo fa-lg" aria-hidden="true"></i>
+                30 Ngày đổi trả dễ dàng
+            </button>
+            <button class="btn btn-dropdown text-dropdown px-0 ml-auto" type="button">
+                <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i>
+                Tìm cửa hàng Tiki trên toàn quốc
+            </button>
+        </nav>
+    </div>
+
     <div class="container">
         <div class="row">
             <div class="col">
                 <div>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
-                            <a href="#">Trang chủ</a>
+                            <a href="./index.html">Trang chủ</a>
                         </li>
                         <li class="breadcrumb-item">
                             <a href="#">Phone</a>
@@ -108,6 +396,12 @@
                             <strong>₫</strong>
                         </h2>
                         <small class="badge badge-primary mt-4">Còn hàng</small>
+                        <div class="border col-md-7 offset-md-4">
+                              
+
+                            <span class="text-align" style="color:#02a8f3"  >   <i class="fa fa-shopping-bag" style="margin-left:8rem" aria-hidden="true"></i> <h5>Shop Pohs-Uy tín hàng đầu</h5> </span>
+                            <span class="text-align" style="color:#02a8f3" ><h5>Cam kết chính hãng 100%</h5> </span>
+                        </div>
                         <div class="card mt-3" style="padding-top:10%">
                             <div class="card-body bg-light border mt-4">
                                 <p class="card-title text-center font-weight-bold">Cấu hình sản phẩm: </p>
@@ -227,12 +521,12 @@
                             <!-- modal -->
                         </div>
                         <p class="text-center mt-5 " >
-                            <a href="#" class="btnb btn-success" role="button">MUA NGAY</a>
+                            <a href="./pay.html" class="btnb btn-success" role="button">MUA NGAY</a>
                         </p>
                     </div>
                 </div>
                 <div >
-                    <div id="mi-slider" class="mi-slider slide0 mt-0">
+                    <div id="mi-slider" class="mi-slider slide0 ">
                         <ul>
                             <li>
                                 <a href="#">
@@ -299,30 +593,32 @@
                         </ul>
                         <class="slide0 nav"><nav>
                                 <a href="#">Sản phẩm cùng loại</a>
-                                <a href="#">Sản phầm cùng NXS</a>
+                                <a href="#">Sản phầm cùng nhà sản xuất </a>
                             </nav>
                         </class>
                     </div>
                 <div class="row border  mx-0">
                     <div class="col-md-12  col-sm-12 col-xs-12 mt-3 ">
-                        <div class="text-center"><h2>Đánh giá chi tiết iPhone X 64GB</h2></div>
+                        <div class="text-center mt-4"><h2>Đánh giá chi tiết iPhone X 64GB</h2></div>
                         <p style="text-align: justify">"Đã lâu lắm rồi Apple mới ra mắt một sản phẩm với thiết kế đột phá và liều lĩnh. Dù vấp phải khá nhiều ý kiến trái chiều nhưng cũng không thể phủ nhận độ hấp dẫn của chiếc iPhone thế hệ thứ 10 này. Công nghệ bảo mật mới, loại bỏ nút home truyền thống, 
                             camera với những tính năng độc quyền, tất cả đã khiến người dùng đứng ngồi không yên cho đến khi được trên tay."</p>
                         <strong>iPhone X 64GB có thiết kế lột xác hoàn toàn</strong>
                         <br></br>
-                        <img alt="Iphone x" src="./img/iphonedetail.jpg" style="width: 793px;height: 500px">
+                        <img alt="Iphone x" src="./img/iphonedetail.jpg" style="width: 978px;height: 400px" class="ml-5">
                         <br></br>
                         <p style="text-align: justify">
                             "iPhone X 64GB đã lột xác hoàn toàn với việc loại bỏ nút Home truyền thống, màn hình tràn viền 
                             và camera kép ở phía sau đã được đặt lại vị trí theo chiều dọc. Khung viền từ thép sáng bóng bền bỉ 
                             và mặt lưng kính với các góc bo tròn dễ dàng cầm nắm. Có thể nói đây là một thiết kế khá đột phá mà lâu lắm rồi Apple mới thể hiện lại.
                             Người dùng cần phải trên tay thì mới cảm nhận được hết nét tinh tế và sang trọng của sản phẩm."    </p>
-
+                        <p style="text-align: right ">Via <strong>FPTSHOP</strong></p>
                         
                 </div>
                     </div>
                 </div>
             </div>
+        </div>
+          
         </div>
     </div>
 
@@ -466,22 +762,22 @@
                 <strong>Kết nối với chúng tôi </strong>
                 <hr>
                 <a href="#">
-                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-facebook social"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-twitter social"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-youtube"></i>
+                    <i class="fa fa-youtube social"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-linkedin"></i>
+                    <i class="fa fa-linkedin social"></i>
                 </a>
                 <a href="#">
-                    <i class="fa fa-google"></i>
+                    <i class="fa fa-google social"></i>
                 </a>
                 <div class="mt-4">
-                    <strong>Tải ứng dụng trên điện thoại</strong>
+                    <strong>Tải ngay ứng dụng trên điện thoại</strong>
                     <br>
                     <img src="./img/google-play-badge.png" alt="">
                     <img src="./img/app-store-badge.png" alt="">
